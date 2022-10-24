@@ -1,0 +1,22 @@
+/*
+Crie uma função que receba dois números como parâmetro, retorne a soma dos valores, 
+em seguida execute a função mostrando na tela o seguinte texto: 
+'A soma dos valores é ${(resultado)}'.
+
+*/
+
+//função usada para somar 2 valores e pritar na tela do usuario 
+
+
+function somarValores(numero1,numero2)    {
+
+    let total = 0
+    total = numero1 + numero2
+    return total
+
+}   
+
+const resuntado = somarValores(501,499);
+
+
+alert(` A soma dos Valores é: ${somarValores(501,499)}`)

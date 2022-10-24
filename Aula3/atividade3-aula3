@@ -1,0 +1,12 @@
+/*
+Crie uma função que receba duas strings como parâmetro, 
+primeiro nome e segundo nome, 
+em seguida retorne o nome completo do indivíduo./*
+
+*/
+
+let nome1 = 'Everson'
+let nome2 = 'Neves'
+let espaco = ' '
+alert (`O nome completo do usuário é :${espaco + nome1 +espaco+ nome2}`)
+

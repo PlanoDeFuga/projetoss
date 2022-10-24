@@ -1,0 +1,26 @@
+/*
+Faça um programa que leia um nome de usuário e a sua senha
+ e não aceite a senha igual ao nome do usuário, 
+ mostrando uma mensagem de erro e voltando a pedir as informações. 
+
+*/
+
+
+
+function usuarioEsenha() {
+    let nome = window.prompt('Digite seu Usuário')
+
+    let senha = window.prompt('Digite Sua Senha')
+
+    {
+        if (nome == senha)
+            alert('Senha igual o Usuário, Digite uma senha diferente do que o usuário')
+        if (nome != senha)
+            alert('Usuário e senha cadastrada com Sucesso')
+
+    }
+
+}
+usuarioEsenha()
+
+

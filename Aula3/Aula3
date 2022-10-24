@@ -1,0 +1,31 @@
+
+function somarValores(n1,n2)    {
+
+    let total = 0
+    total = n1 + n2
+    return total
+
+}   
+
+const resuntado = somarValores(10,20);
+
+//alert(resuntado)
+
+alert(` A soma dos Valores é: ${somarValores(10,20)}`)
+
+
+
+// duvida o que return faz 
+
+/*
+function dividirValores(n1, n2)
+ {
+    let resuntado = n1 /n2                  forma de chamar a function
+
+}
+*/
+
+//let subitrairValores = (n1 , n2 ) => {     } outra forma de fazer uma function
+
+
+

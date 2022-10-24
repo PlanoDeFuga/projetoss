@@ -1,0 +1,111 @@
+// variaveis  (string, number , boolean, "typeof")
+// arrays  ( for , forEanch)
+// funções (parâmetros)
+// Obejetos
+
+/*const pessoa = {
+
+    nome: 'Gabriel',
+    cpf: '110.444.454-50'
+    altura: 1.80,
+    sexo: 'M',
+    casado: false,
+
+
+
+
+}
+
+const veiculo = {
+    marca: "vw",
+    modelo: "gol",
+    ano: 2019,
+    cor: 'vermelho',
+   
+    acelerar: function(){
+        alert(`o ${this.modelo}acelerou e foi multado`)
+
+    },
+
+alert(veiculo.acelerar())
+
+}
+
+*/
+//push
+
+//pop
+// Variaveis (String, Number, Boolean, "typeof")
+// Arrays (For, ForEach)
+// Funções (Parâmetros)
+// Obejetos
+
+// const pessoas = [
+// {
+// nome: "Gabriel",
+// cpf: "109.123.123-12",
+// altura: 1.81,
+// sexo: "M",
+// casado: false,
+// },
+// {
+// nome: "Gabriel",
+// cpf: "109.123.123-12",
+// altura: 1.81,
+// sexo: "M",
+// casado: false,
+// },
+// ];
+
+
+// const veiculo = {
+// marca: "vw",
+// modelo: "gol",
+// ano: 2019,
+// cor: 'test',
+// acelerar: function() {
+// alert(`O ${this.modelo} acelerou!!!`)
+// },
+// motorista: pessoas[0]
+
+// }
+
+
+
+const veiculos = [];
+
+function executarMenu() {
+const resultado = prompt(`
+(1) Casdastrar Veiculo
+(2)
+(3) Apresentar Veiculos
+(4) Sair
+`)
+
+if(resultado == "1") {
+cadastrarVeiculo()
+}
+
+if(resultado == "3") {
+console.log(veiculos);
+}
+
+
+if(resultado != "4") {
+executarMenu();
+}
+}
+
+function cadastrarVeiculo() {
+const veiculo = {
+cor: prompt('Digite a cor do veiculo'),
+ano: prompt('Digite o ano do veiculo')
+}
+
+veiculos.push(veiculo)
+
+}
+
+
+executarMenu()
+

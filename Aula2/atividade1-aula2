@@ -1,0 +1,21 @@
+/*
+Faça um programa que peça uma nota, entre zero e dez. 
+Mostre uma mensagem caso o valor seja inválido e continue pedindo até que o usuário
+ informe um valor válido. */
+
+function verificarnota() {
+    let nota = window.prompt('Digite uma nota entre 0 a 10')
+    {
+        if (nota < 0 || nota > 10)
+            alert('Nota invalida Digite Novamente sua nota Entre 0 a 10')
+        verificarnota
+        
+        if (nota >=0 || nota <=10 )
+        alert('Nota Salva Com Sucesso')
+
+    }
+}
+verificarnota()
+
+
+
