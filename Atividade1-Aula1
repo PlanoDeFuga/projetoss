@@ -1,0 +1,13 @@
+/*
+1.  Faça um programa que entre com três números, faça a média aritmética e mostre o
+resultado. 
+*/
+
+let numeros = [1, 2, 3]
+let total = 0
+
+for(let i = 0; i< numeros.length; i++){
+    total += numeros[i]
+}
+
+alert(total / numeros.length)

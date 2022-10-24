@@ -1,0 +1,34 @@
+/*
+7. Cada espectador de um cinema respondeu a um questionário no qual constava sua idade e a sua opinião em relação ao filme: 
+ótimo: 3
+ bom: 2 
+regular: 1
+8. Faça um programa que receba a idade e a opinião de 15 espectadores, calcule e imprima:
+a média das idades das pessoas que responderam ótimo;
+a quantidade de pessoas que responderam regular;
+a porcentagem de pessoas que responderam bom entre todos os espectadores analisados.
+ */
+
+let especBom = [25, 21, 18, 19, 25,];
+let especOtimo = [ 17, 15,47, 58, 14];
+let especRegular = [16, 22, 27, 35, 88];
+let total = 
+especBom.length + 
+especOtimo.length + 
+especRegular.length
+
+let otimo = 0
+let bom = 0
+
+for (let i = 0; i < especOtimo.length; i ++){
+    otimo += especOtimo[i]
+    bom = (especBom.length / total) * 100
+}
+
+console.log(`Media de idade das pessoas que responderam Ótimo ${otimo / especOtimo.length} anos`);
+console.log(`${especRegular.length} pessoas acharam o filme Regular`);
+console.log(`${bom.toFixed(0)}% dos espectadores acharam o filme Bom`);
+
+/*
+  porcento regular.length / total * 100
+*/

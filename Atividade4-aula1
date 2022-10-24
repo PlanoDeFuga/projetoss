@@ -1,0 +1,21 @@
+/*
+4. A partir do preço à vista de um determinado produto, calcule o preço total a pagar e o
+valor da prestação mensal, referentes ao pagamento parcelado. Se o pagamento for
+parcelado em 3 vezes deve ser dado um acréscimo de 10% no total a ser pago. Se o
+parcelamento for em 5 vezes, o acréscimo será de 20%. 
+*/
+
+let produto = 25000
+let prestacoes = 300
+let parcelas3 = (10 / 100)* produto
+parcelas3 += produto
+
+let parcelas5 = (20 / 100)* produto
+parcelas5 += produto
+
+if (prestacoes <= 3 ){
+    alert(`valor total R$${produto}  ${prestacoes}x de R$${parcelas3 / prestacoes} valor total com juros de 10% R$${parcelas3}`)
+}else{
+    alert(`valor total R$${produto}  ${prestacoes}x de R$${parcelas5 / prestacoes} valor total com juros de 20% R$${parcelas5}`)
+}
+console.log("oi")

@@ -1,0 +1,19 @@
+/*
+5. Faça um algoritmo que leia o nome e as três notas de uma disciplina de um aluno e ao
+final escreva o nome do aluno, sua média e se ele foi aprovado, sabendo-se que a média
+para aprovação é igual ou superior a 8.  
+*/
+
+let aluno = "everson"
+let notas = [1, 2, 3]
+let media = 0
+for (let i = 0; i < notas.length; i++){
+    media += notas[i]
+}
+
+if(media >= 8){
+    console.log(`O aluno ${aluno} tirou as seguintes notas: ${notas} e teve a media ${media}`)
+}else{
+    alert("Atenção aluno Reprovado")
+    console.log(`O aluno ${aluno} tirou as seguintes notas: ${notas} e teve a media ${media} e está REPROVADO!!!`)
+}

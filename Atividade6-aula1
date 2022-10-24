@@ -1,0 +1,33 @@
+/*
+6. Tem-se um conjunto de dados contendo a altura  de 15 pessoas. Faça um programa que calcule e escreva:
+a maior e a menor altura do grupo;
+a média de altura;
+o número de pessoas com mais de 1.81 de altura.
+*/
+
+let altura = [
+  1500, 1800, 1650, 1760, 1590, 1570, 1720, 1690, 1480, 1880, 1950, 1620, 1750,
+  1850, 1980,
+];
+
+let maior = 0;
+let menor = 5000;
+let media = 0;
+let acimaDe181 = 0;
+
+for (let i = 0; i < altura.length; i++) {
+
+  media += altura[i] / altura.length;
+
+  if (altura[i] > maior) {
+    maior = altura[i];
+  }
+  if (altura[i] < menor){
+    menor = altura[i]
+  }
+
+}
+
+alert(`A MAIOR altura do grupo é ${maior}`)
+alert(`A MENOR altura do grupo é ${menor}`)
+alert(`A MEDIA de altura do grupo é ${media.toFixed(0)}`)
